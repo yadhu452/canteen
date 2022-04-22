@@ -1,0 +1,61 @@
+#include <stdio.h>
+
+int main() 
+{
+    int n=0;
+    char c;
+    printf("enter 1 for food:");
+    printf("\nenter 2 for juice:");
+    scanf("%d",&n);
+    switch (n)
+    {
+        case 1:
+        printf("here's your menu:\n");
+        printf("enter p for pav bhaji");
+        printf("enter w for pizza");
+        printf("enter h for panipuri");
+        scanf(" %c",&c);
+        if(c=='p')
+        {
+            printf("here's your order\n your amount to be paid is:100");
+        }
+        else if(c=='w')
+        {
+            printf("here's your order\n your amount to be paid is:150");
+        }
+        else if(c=='h')
+        {
+            printf("here's your order\n your amount to be paid is:200");
+        }
+        else
+        printf("\n wrong input");
+        break;
+        case 2:
+        printf("\nenter w for watermelon juice");
+        printf("\nenter p for pineapple juice");
+        printf("\nenter a for apple juice");
+        scanf(" %c",&c);
+        if(c=='w')
+        {
+            printf("here's your order\n your amount to be paid is:50");
+        }
+        else if(c=='p')
+        {
+            printf("here's your order\n your amount to be paid is:50");
+        }
+        else if(c=='a')
+        {
+            printf("here's your order\n your amount to be paid is:50");
+        }
+        else
+        {
+            printf("wrong input");
+        }
+        break;
+        default:
+        {
+        printf("wrong input");
+        }
+    }
+    return 0;
+}
